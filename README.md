@@ -5,7 +5,6 @@ TAPP Code Challenge for Software Engineer Candidates
 - [Time Limit](#time-limit)
 - [User Interface](#user-interface)
 - [Requirements](#requirements)
-- [Optional](#optional)
 - [What We Are Looking For](#what-we-are-looking-for)
 
 ## Candidate Information (Fill out with your info)
@@ -50,16 +49,16 @@ The resulting app should have UI that closely resembles the provided design mock
 - Responsive Layouts (iPhone 6 or newer)
 - Use of [Google Maps Platform](https://developers.google.com/maps/documentation/) (place autocomplete, place detail, place photo)
 
-* ###### Bookmarks Screen
+*  __Bookmarks Screen__
   * Show list of bookmarked place, if any
-* ###### Search Screen
+* __Search Screen__
   * Show all results from Google Places Autocomplete as user types in search field
-* ###### Place Screen
+* __Place Screen__
   * Use Google Place Details to retrieve all relevant data
   * Use Google Place Photo to show a photo from Details
   * Correct ‘Bookmark’ button depending on if place is bookmarked
   
-## *Optional*
+__Optional__
 
 * Redux integration
 * Firebase integration - bookmarks stored in Firestore
@@ -68,7 +67,7 @@ The resulting app should have UI that closely resembles the provided design mock
 
 ## What We Are Looking For
 
-* ###### General
+### General
   * Good coding standards
     * Naming
     * Readability
@@ -77,7 +76,7 @@ The resulting app should have UI that closely resembles the provided design mock
   * File Structure
   * Env-friendly Config
 
-* ###### User Interface
+### User Interface
   * Fulfills Design Mockups
   * Navigation
   * Components
@@ -85,10 +84,10 @@ The resulting app should have UI that closely resembles the provided design mock
     * Styling
     * Composition
 
-* ###### Data
+### Data
   * State Management
   * Data Structure
 
-* ###### APIs/Services
+### APIs/Services
   * Credentials Management
   * Integration with UI and State
