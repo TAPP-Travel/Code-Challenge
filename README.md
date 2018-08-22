@@ -49,7 +49,7 @@ The resulting app should have UI that closely resembles the provided design mock
 - Responsive Layouts (iPhone 6 or newer)
 - Use of [Google Maps Platform](https://developers.google.com/maps/documentation/) (place autocomplete, place detail, place photo)
 
-*  __Bookmarks Screen__
+* __Bookmarks Screen__
   * Show list of bookmarked place, if any
 * __Search Screen__
   * Show all results from Google Places Autocomplete as user types in search field
