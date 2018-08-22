@@ -8,24 +8,39 @@ TAPP Code Challenge for Software Engineer Candidates
 - [Optional](#optional)
 - [What We Are Looking For](#what-we-are-looking-for)
 
+## Candidate Information (Fill out with your info)
+
+Name: \<your name>
+
+Email: \<your email>
+
+Resume: \<link to your resume>
+
 ## Intro
 
 The goal of this challenge is to assess a candidate’s proficiency in Javascript, React Native and using APIs, by implementing a simple app that simulates a **Places Bookmark** feature.
 
 The candidate will:
-* fork our Code Challenge Github repo
+* fork our [Code Challenge](https://github.com/TAPP-Travel/Code-Challenge/tree/master) Github repo
 * Update README.md with their information
-* Work and make commits with their code to the “app” folder
-  * Include a detailed README on how to configure and run the app
+* Create a new folder called `/app`
+* Work and make commits as they code to the `/app` folder
+* Include a detailed README on how to setup/configure and run the app in `/app`
 * Make their forked repo public accessible
-* Submit link to forked repo via email within time limit
+* Submit to code-challenge@tapptravel.co with in time limit
+  * subject line of your name, ‘submission’ and date. For example, "Tommy Tapp Submission 08-22-2018"
+  * body with link to your repo and roughly how long it took you to complete the challenge.
+  
+Good luck! Can’t wait to see your awesome code! If you have any questions, ask us at code-challenge@tapptravel.co
 
 ## Time Limit
 
 The challenge must be submitted within 72 hours of receiving. The time heavily depends on how feature complete you want to make it. Realistically, you should not spend more than a day.
 
 ## User Interface
-[Design Mockups](https://github.com/TAPP-Travel/Code-Challenge/tree/master/design) (Open *index.html* to view mockups)
+[Design Mockups](https://github.com/TAPP-Travel/Code-Challenge/tree/master/design)
+
+You can open `/design/index.html` as a local file in your browser to view mockups. Assets are included in `/design/assets`.
 
 The resulting app should have UI that closely resembles the provided design mockups. While it doesn’t have to be pixel perfect, the key relationships and design elements should be implemented.
 
@@ -43,7 +58,7 @@ The resulting app should have UI that closely resembles the provided design mock
   * Use Google Place Details to retrieve all relevant data
   * Use Google Place Photo to show a photo from Details
   * Correct ‘Bookmark’ button depending on if place is bookmarked
-
+  
 ## *Optional*
 
 * Redux integration
@@ -58,8 +73,9 @@ The resulting app should have UI that closely resembles the provided design mock
     * Naming
     * Readability
     * Comments
-  * Env-friendly Config
+  * Code Design
   * File Structure
+  * Env-friendly Config
 
 * ###### User Interface
   * Fulfills Design Mockups
