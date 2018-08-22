@@ -25,7 +25,7 @@ The candidate will:
 The challenge must be submitted within 72 hours of receiving. The time heavily depends on how feature complete you want to make it. Realistically, you should not spend more than a day.
 
 ## User Interface
-[Design Mockups Link]()
+[Design Mockups](https://github.com/TAPP-Travel/Code-Challenge/tree/master/design) (Open *index.html* to view mockups)
 
 The resulting app should have UI that closely resembles the provided design mockups. While it doesn’t have to be pixel perfect, the key relationships and design elements should be implemented.
 
@@ -43,7 +43,7 @@ The resulting app should have UI that closely resembles the provided design mock
   * Use Google Place Details to retrieve all relevant data
   * Use Google Place Photo to show a photo from Details
   * Correct ‘Bookmark’ button depending on if place is bookmarked
-  
+
 ## *Optional*
 
 * Redux integration
