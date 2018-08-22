@@ -20,7 +20,7 @@ Resume: \<link to your resume>
 The goal of this challenge is to assess a candidate’s proficiency in Javascript, React Native and using APIs, by implementing a simple app that simulates a **Places Bookmark** feature.
 
 The candidate will:
-* fork our [Code Challenge](https://github.com/TAPP-Travel/Code-Challenge/tree/master) Github repo
+* Fork our [Code Challenge](https://github.com/TAPP-Travel/Code-Challenge/tree/master) Github repo
 * Update `README.md` with their information
 * Create a new folder called `/app`
 * Work and make commits as they code to the `/app` folder
