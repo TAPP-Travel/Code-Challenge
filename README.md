@@ -21,10 +21,10 @@ The goal of this challenge is to assess a candidate’s proficiency in Javascrip
 
 The candidate will:
 * fork our [Code Challenge](https://github.com/TAPP-Travel/Code-Challenge/tree/master) Github repo
-* Update README.md with their information
+* Update `README.md` with their information
 * Create a new folder called `/app`
 * Work and make commits as they code to the `/app` folder
-* Include a detailed README on how to setup/configure and run the app in `/app`
+* Include a detailed `README.md` in `/app` on how to setup/configure and run the app
 * Make their forked repo public accessible
 * Submit to code-challenge@tapptravel.co with in time limit
   * subject line of your name, ‘submission’ and date. For example, "Tommy Tapp Submission 08-22-2018"
