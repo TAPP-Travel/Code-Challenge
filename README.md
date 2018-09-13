@@ -62,8 +62,9 @@ __Optional__
 
 * Redux integration
 * Firebase integration - bookmarks stored in Firestore
+* Detailed git commit history (we like seeing your coding process)
+* Creative liberties to improve on functionality (following our UI desgin)
 * Demo video - showcase any additional features
-* Creative liberties to improve on the proposed experience.
 
 ## What We Are Looking For
 
