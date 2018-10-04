@@ -9,11 +9,11 @@ TAPP Code Challenge for Software Engineer Candidates
 
 ## Candidate Information (Fill out with your info)
 
-Name: \<your name>
+Name: \<Brent Ingram>
 
-Email: \<your email>
+Email: \<brentjayingram@gmail.com>
 
-Resume: \<link to your resume>
+Resume: \<http://bit.ly/2IzZMeN>
 
 ## Intro
 
