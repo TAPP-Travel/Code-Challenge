@@ -1,9 +1,9 @@
 {
-  "expoServerPort": null,
-  "expoServerNgrokUrl": null,
-  "packagerNgrokUrl": null,
-  "ngrokPid": null,
-  "packagerPort": null,
-  "packagerPid": null,
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://n4-nxe.bingr001.code-challenge.exp.direct",
+  "packagerNgrokUrl": "https://packager.n4-nxe.bingr001.code-challenge.exp.direct",
+  "ngrokPid": 5570,
+  "packagerPort": 19001,
+  "packagerPid": 5556,
   "devToolsPort": 19002
 }
