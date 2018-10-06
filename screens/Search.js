@@ -13,7 +13,7 @@ import { GoogleAutoComplete } from "react-native-google-autocomplete";
 import LocationItem from "../components/LocationItem";
 
 
-
+//This uses Google Auto Complete to show a few places that match the searched term
 
 export default class App extends React.Component {
     render() {

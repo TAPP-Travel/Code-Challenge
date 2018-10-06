@@ -1,10 +1,14 @@
 import React, { PureComponent } from 'react';
 import { View, Alert, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
+//this handles the logic for search and showing the list of places.
+
 class LocationItem extends PureComponent {
     _handlePress = async () => {
         const res = await this.props.fetchDetails(this.props.place_id)
+        
         console.log('result', res)
+
     }
 
     render() {
@@ -12,6 +16,8 @@ class LocationItem extends PureComponent {
             <TouchableOpacity style={styles.root} onPress={this._handlePress}>
                 <Text>{this.props.description}</Text>
             </TouchableOpacity>
+
+
         );
     }
 }
