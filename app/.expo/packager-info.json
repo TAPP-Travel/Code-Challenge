@@ -1,0 +1,9 @@
+{
+  "expoServerPort": 19000,
+  "expoServerNgrokUrl": "https://n4-nxe.bingr001.app.exp.direct",
+  "packagerNgrokUrl": "https://packager.n4-nxe.bingr001.app.exp.direct",
+  "ngrokPid": 12411,
+  "packagerPort": 19001,
+  "packagerPid": 12400,
+  "devToolsPort": 19002
+}
