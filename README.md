@@ -20,7 +20,7 @@ Additional: _Such as Github or LinkedIn, etc_
 
 ## Intro
 
-The goal of this challenge is to assess a candidate’s proficiency in Javascript, React Native and using APIs, by implementing a simple app that simulates a **Places Bookmark** feature.
+The goal of this challenge is to assess a candidate’s proficiency in Javascript, React Native and using APIs, by implementing a simple app that simulates a **Place Bookmarks** feature.
 
 The candidate will:
 
@@ -68,7 +68,9 @@ The resulting app should have UI that closely resembles the provided design mock
 
 ### Optional
 
-- TypeScript
+These aren't required but are great to see!
+
+- TypeScript - yep, we use it
 - Redux integration
 - Firebase integration - bookmarks stored in Firestore
 - Detailed git commit history (we like seeing your coding process)
