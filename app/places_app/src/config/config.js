@@ -1,3 +1,3 @@
-const googleApikey = "YOUR_KEY_HERe";
+const googleApikey = "YOUR_KEY_HERE";
 
 export default googleApikey;
