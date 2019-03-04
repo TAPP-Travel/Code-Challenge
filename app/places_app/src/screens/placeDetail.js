@@ -1,12 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import { verticalScale } from 'react-native-size-matters';
-import GoogleAutoComplete from '../components/autocompleteGoogle';
 import MapContextToProps from '../context/mapContextToProps';
 
-class Search extends React.Component {
+class PlaceDetail extends React.Component {
   goToDetail = async selectedPlace => {
-    console.log('detail');
     const { selectPlace } = this.props.context;
     await selectPlace(selectedPlace);
     this.props.navigation.navigate('PlaceDetail');
@@ -20,10 +18,10 @@ class Search extends React.Component {
           justifyContent: 'center',
           marginTop: verticalScale(20),
         }}>
-        <GoogleAutoComplete goToDetail={this.goToDetail} />
+        <Text>Detail</Text>
       </View>
     );
   }
 }
 
-export default MapContextToProps(Search);
+export default MapContextToProps(PlaceDetail);

@@ -1,5 +1,6 @@
 import { createAppContainer, createStackNavigator } from 'react-navigation';
 import HomeScreen from '../screens/home';
+import PlaceDetail from '../screens/placeDetail';
 import Search from '../screens/search';
 
 const AppNavigator = createStackNavigator({
@@ -11,6 +12,12 @@ const AppNavigator = createStackNavigator({
   },
   Search: {
     screen: Search,
+    navigationOptions: {
+      header: null,
+    },
+  },
+  PlaceDetail: {
+    screen: PlaceDetail,
     navigationOptions: {
       header: null,
     },
