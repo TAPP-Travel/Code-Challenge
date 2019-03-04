@@ -5065,6 +5065,11 @@ react-native-safe-area-view@^0.13.0:
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-1.0.0-alpha.22.tgz#7a120377b52aa9bbb94d0b8541a014026be9289b"
   integrity sha512-kSyAt0AeVU6N7ZonfV6dP6iZF8B7Bce+tk3eujXhzBGsLg0VSLnU7uE9VqJF0xdQrHR91ZjGgVMieo/8df9KTA==
 
+react-native-size-matters@^0.1.6:
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/react-native-size-matters/-/react-native-size-matters-0.1.6.tgz#2d49390ab861e7a9335d8d92b80d7f75349ff8a0"
+  integrity sha512-XE6foUS1GGC5XLFAL643vpupoR/lHKRePoV4Meh27fhAKxWxPJdJdgdFcMBK50idWrAxv8ZfBtPhtTSv+IKAcg==
+
 react-native-tab-view@^1.0.0, react-native-tab-view@^1.2.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-1.3.2.tgz#c4e43a538dcacce151938745cea09176beeccbc3"
