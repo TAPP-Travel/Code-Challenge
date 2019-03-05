@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Text, View } from 'react-native';
 import HomeFooter from '../components/homeFooter';
 import NoBookmarks from '../components/noBookmarks';
 import WelcomeHeader from '../components/welcomeHeader';
@@ -14,9 +14,9 @@ class HomeScreen extends React.Component {
           alignItems: 'center',
           justifyContent: 'space-between',
           backgroundColor: '#FDFDFD',
-         }}>
+        }}>
         <WelcomeHeader timeOfDay="Afternoon" weather="72° and Sunny" />
-        {!bookmarks.length && <NoBookmarks />}
+        {!bookmarks.length ? <NoBookmarks /> : <Text>carrasol</Text>}
         <HomeFooter />
       </View>
     );

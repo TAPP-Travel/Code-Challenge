@@ -12,7 +12,9 @@ class PlaceDetail extends React.Component {
   };
 
   pinToTrip = () => {
+    const { selectedPlace } = this.props.context;
     this.setState({ isPinned: true });
+    this.props.context.addBookmark({ selectedPlace, pinned: true });
   };
   render() {
     const photoReference = this.props.context.selectedPlace.details.photos[0].photo_reference;
