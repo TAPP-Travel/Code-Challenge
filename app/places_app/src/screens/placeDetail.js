@@ -1,10 +1,10 @@
 import React from 'react';
-import { Image, Text, View } from 'react-native';
+import { StatusBar, View } from 'react-native';
 import GoogleStaticMap from 'react-native-google-static-map';
 import { scale, verticalScale } from 'react-native-size-matters';
 import googleApiKey from '../../config';
+import DetailHeader from '../components/detailHeader';
 import MapContextToProps from '../context/mapContextToProps';
-
 class PlaceDetail extends React.Component {
   goToDetail = async selectedPlace => {
     const { selectPlace } = this.props.context;
@@ -13,29 +13,31 @@ class PlaceDetail extends React.Component {
   };
   render() {
     const photoReference = this.props.context.selectedPlace.details.photos[0].photo_reference;
+    const { lat, lng } = this.props.context.selectedPlace.details.geometry.location;
+    const {  rating } = this.props.context.selectedPlace.details;
     console.log(photoReference);
+    const detailImage = `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=${googleApiKey}`;
+    const {
+      main_text,
+      secondary_text,
+    } = this.props.context.selectedPlace.data.structured_formatting;
     return (
       <View
         style={{
           flex: 1,
           alignItems: 'center',
-          justifyContent: 'center',
-          marginTop: verticalScale(20),
         }}>
-        <Text>Detail</Text>
-        <Image
-          style={{ height: verticalScale(100), width: scale(100) }}
-          source={{
-            uri: `https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=${photoReference}&key=${googleApiKey}`,
-          }}
-        />
-        <GoogleStaticMap
-          latitude={'32.064171'}
-          longitude={'34.7748068'}
-          zoom={14}
-          size={{ width: '100%', height: verticalScale(100) }}
-          apiKey={googleApiKey}
-        />
+        <StatusBar hidden />
+        <DetailHeader image={detailImage} name={main_text} city={secondary_text} rating={rating} />
+        <View>
+          <GoogleStaticMap
+            latitude={lat.toString()}
+            longitude={lng.toString()}
+            zoom={14}
+            size={{ width: Math.round(scale(300)), height: Math.round(verticalScale(200)) }}
+            apiKey={googleApiKey}
+          />
+        </View>
       </View>
     );
   }

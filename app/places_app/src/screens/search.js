@@ -18,7 +18,7 @@ class Search extends React.Component {
           flex: 1,
           alignItems: 'center',
           justifyContent: 'center',
-          marginTop: verticalScale(20),
+          marginTop: verticalScale(30),
         }}>
         <GoogleAutoComplete goToDetail={this.goToDetail} />
       </View>
