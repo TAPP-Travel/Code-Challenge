@@ -2,7 +2,6 @@ import React from 'react';
 import { View } from 'react-native';
 import { verticalScale } from 'react-native-size-matters';
 import GoogleAutoComplete from '../components/autocompleteGoogle';
-import BackButton from '../components/backButton';
 import MapContextToProps from '../context/mapContextToProps';
 
 class Search extends React.Component {
@@ -19,9 +18,6 @@ class Search extends React.Component {
           flex: 1,
           marginTop: verticalScale(30),
         }}>
-        <View style={{ alignSelf: 'flex-start' }}>
-          <BackButton />
-        </View>
         <GoogleAutoComplete goToDetail={this.goToDetail} />
       </View>
     );
