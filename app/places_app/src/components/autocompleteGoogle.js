@@ -43,6 +43,7 @@ const GooglePlacesInput = ({ goToDetail }) => {
         // available options for GooglePlacesSearch API : https://developers.google.com/places/web-service/search
         rankby: 'distance',
         types: 'food',
+        componentRestrictions: { locality: 'Louisville' },
       }}
       debounce={200} // debounce the requests in ms. Set to 0 to remove debounce. By default 0ms.
       //renderLeftButton={() => <Image source={require('path/custom/left-icon')} />}

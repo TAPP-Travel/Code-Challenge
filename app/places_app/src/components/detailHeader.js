@@ -7,34 +7,42 @@ const FooterBackround = require('../../assets/tripBackground.png');
 const addButtonImage = require('../../assets/addBookmarkButton.png');
 
 const DetailHeader = ({ backround, image, rating, city, name }) => (
-  <ImageBackground
-    source={{ uri: image }}
+  <View
     style={{
-      height: verticalScale(400),
+      alignItems: 'center',
+      justifyContent: 'center',
       width: '100%',
-      justifyContent: 'space-between',
-      zIndex: -1,
+      borderRadius: scale(50),
     }}>
-    <BackButton />
-    <View
+    <ImageBackground
+      source={{ uri: image }}
       style={{
-        flexDirection: 'row',
+        height: verticalScale(400),
+        width: '100%',
         justifyContent: 'space-between',
-        alignItems: 'flex-end',
-        marginHorizontal: scale(10),
-        marginBottom: verticalScale(10),
+        zIndex: -1,
       }}>
-      <View>
-        <Text style={[styles.textColor, { fontWeight: 'bold', fontSize: moderateScale(13) }]}>
-          {city}
-        </Text>
-        <Text style={[styles.textColor, { fontWeight: '400', fontSize: moderateScale(18) }]}>
-          {name}
-        </Text>
+      <BackButton />
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'flex-end',
+          marginHorizontal: scale(10),
+          marginBottom: verticalScale(30),
+        }}>
+        <View>
+          <Text style={[styles.textColor, { fontWeight: 'bold', fontSize: moderateScale(13) }]}>
+            {city}
+          </Text>
+          <Text style={[styles.textColor, { fontWeight: '400', fontSize: moderateScale(18) }]}>
+            {name}
+          </Text>
+        </View>
+        <StarsPill rating={rating} />
       </View>
-      <StarsPill rating={rating} />
-    </View>
-  </ImageBackground>
+    </ImageBackground>
+  </View>
 );
 
 export default DetailHeader;

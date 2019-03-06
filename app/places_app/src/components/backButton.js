@@ -7,7 +7,7 @@ const backIcon = require('../../assets/goIcon.png');
 const BackButton = ({ navigation }) => (
   <TouchableOpacity
     style={{ marginTop: verticalScale(40), marginLeft: scale(20) }}
-    onPress={() => navigation.goBack()}>
+    onPress={() => navigation.navigate('HomeScreen')}>
     <Image style={{ transform: [{ rotate: '180deg' }] }} source={backIcon} />
   </TouchableOpacity>
 );

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Text, TouchableOpacity, View } from 'react-native';
-import { moderateScale, verticalScale } from 'react-native-size-matters';
+import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 const check = require('../../assets/checkmarkIcon.png');
 
 const PinToTripButton = ({ pinToTrip, isPinned }) => (
@@ -8,12 +8,13 @@ const PinToTripButton = ({ pinToTrip, isPinned }) => (
     <View
       style={{
         backgroundColor: !isPinned ? '#1313AF' : '#00FF1C',
-
         alignItems: 'center',
         justifyContent: 'center',
         height: verticalScale(30),
+        width: scale(300),
         borderRadius: moderateScale(30),
         marginVertical: verticalScale(10),
+        marginHorizontal: scale(20),
       }}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         {isPinned && <Image source={check} />}

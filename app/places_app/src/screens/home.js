@@ -1,5 +1,6 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { FlatList, View } from 'react-native';
+import BookMarkedPlace from '../components/bookmarkedPlace';
 import HomeFooter from '../components/homeFooter';
 import NoBookmarks from '../components/noBookmarks';
 import WelcomeHeader from '../components/welcomeHeader';
@@ -16,7 +17,20 @@ class HomeScreen extends React.Component {
           backgroundColor: '#FDFDFD',
         }}>
         <WelcomeHeader timeOfDay="Afternoon" weather="72° and Sunny" />
-        {!bookmarks.length ? <NoBookmarks /> : <Text>carrasol</Text>}
+        <FlatList
+          contentContainerStyle={{
+            alignItems: 'center',
+            width: '100%',
+            justifyContent: 'center',
+          }}
+          horizontal
+          ListEmptyComponent={<NoBookmarks />}
+          data={this.props.context.bookmarks}
+          renderItem={({ item }) => (
+            <BookMarkedPlace item={item} data={item.data} details={item.details} />
+          )}
+          keyExtractor={(item, index) => index.toString()}
+        />
         <HomeFooter />
       </View>
     );
