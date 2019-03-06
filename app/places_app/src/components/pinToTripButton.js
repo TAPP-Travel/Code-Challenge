@@ -4,7 +4,7 @@ import { moderateScale, scale, verticalScale } from 'react-native-size-matters';
 const check = require('../../assets/checkmarkIcon.png');
 
 const PinToTripButton = ({ pinToTrip, isPinned }) => (
-  <TouchableOpacity onPress={pinToTrip}>
+  <TouchableOpacity onPress={pinToTrip} disabled={isPinned}>
     <View
       style={{
         backgroundColor: !isPinned ? '#1313AF' : '#00FF1C',

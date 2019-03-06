@@ -35,6 +35,7 @@ const DetailHeader = ({ backround, image, rating, city, name }) => (
           <Text style={[styles.textColor, { fontWeight: 'bold', fontSize: moderateScale(13) }]}>
             {city}
           </Text>
+
           <Text style={[styles.textColor, { fontWeight: '400', fontSize: moderateScale(18) }]}>
             {name}
           </Text>

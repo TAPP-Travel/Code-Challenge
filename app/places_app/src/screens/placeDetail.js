@@ -12,6 +12,16 @@ class PlaceDetail extends React.Component {
     isPinned: false,
   };
 
+  componentDidMount() {
+    const {  selectedPlace } = this.props.context;
+    if (
+      selectedPlace.pinned ||
+      this.props.context.bookmarks.some(bookmark => bookmark.data.id === selectedPlace.data.id)
+    ) {
+      this.setState({ isPinned: true });
+    }
+  }
+
   pinToTrip = () => {
     const { selectedPlace } = this.props.context;
     this.setState({ isPinned: true });
@@ -34,6 +44,7 @@ class PlaceDetail extends React.Component {
       main_text,
       secondary_text,
     } = this.props.context.selectedPlace.data.structured_formatting;
+    const secondaryTextArray = secondary_text.split(',');
     return (
       <View
         style={{
@@ -41,7 +52,12 @@ class PlaceDetail extends React.Component {
           alignItems: 'center',
         }}>
         <StatusBar hidden />
-        <DetailHeader image={detailImage} name={main_text} city={secondary_text} rating={rating} />
+        <DetailHeader
+          image={detailImage}
+          name={main_text}
+          city={`${secondaryTextArray[1]}, ${secondaryTextArray[2]}`}
+          rating={rating}
+        />
         <View
           style={{
             backgroundColor: '#FFF',
