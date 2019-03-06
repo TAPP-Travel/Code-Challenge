@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
+import { verticalScale } from 'react-native-size-matters';
 import googleAPIKey from '../../config';
 
 const GooglePlacesInput = ({ goToDetail }) => {
@@ -12,6 +13,14 @@ const GooglePlacesInput = ({ goToDetail }) => {
       placeholder="Search"
       minLength={2} // minimum length of text to search
       autoFocus
+      styles={{
+        textInputContainer: {
+          backgroundColor: '#FFF',
+          borderTopWidth: 0,
+          height: verticalScale(40),
+          alignItems: 'center',
+        },
+      }}
       returnKeyType={'search'} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
       listViewDisplayed="auto" // true/false/undefined
       fetchDetails={true}

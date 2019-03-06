@@ -10,13 +10,13 @@ TAPP Code Challenge for Software Engineer Candidates
 
 ## Candidate Information (Fill out with your info)
 
-Name: _Your Name_
+Name: Walter Shub
 
-Email: _Your email_
+Email: waltershub@gmail.com
 
-Resume: _link to your resume_
+Resume: already sent to you 
 
-Additional: _Such as Github or LinkedIn, etc_
+Additional: https://www.linkedin.com/in/walter-shub-474823131/
 
 ## Intro
 
