@@ -12,17 +12,6 @@ const GooglePlacesInput = ({ goToDetail }) => {
       placeholder="Search"
       minLength={2} // minimum length of text to search
       autoFocus
-      styles={{
-        textInputContainer: {
-          width: '100%',
-        },
-        description: {
-          fontWeight: 'bold',
-        },
-        predefinedPlacesDescription: {
-          color: '#1faadb',
-        },
-      }}
       returnKeyType={'search'} // Can be left out for default return key https://facebook.github.io/react-native/docs/textinput.html#returnkeytype
       listViewDisplayed="auto" // true/false/undefined
       fetchDetails={true}
@@ -37,17 +26,6 @@ const GooglePlacesInput = ({ goToDetail }) => {
         key: googleAPIKey,
         language: 'en', // language of the results
       }}
-      styles={{
-        textInputContainer: {
-          width: '100%',
-        },
-        description: {
-          fontWeight: 'bold',
-        },
-        predefinedPlacesDescription: {
-          color: '#1faadb',
-        },
-      }}
       nearbyPlacesAPI="GooglePlacesSearch" // Which API to use: GoogleReverseGeocoding or GooglePlacesSearch
       GooglePlacesSearchQuery={{
         // available options for GooglePlacesSearch API : https://developers.google.com/places/web-service/search
@@ -61,7 +39,7 @@ const GooglePlacesInput = ({ goToDetail }) => {
         <TouchableOpacity
           onPress={() => this.GooglePlacesRef.setAddressText('')}
           style={{ alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ textAlign: 'center' }}>cancel</Text>
+          <Text style={{ color: '#007AFF' }}>cancel</Text>
         </TouchableOpacity>
       )}
     />
